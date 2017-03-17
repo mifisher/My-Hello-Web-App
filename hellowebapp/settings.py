@@ -25,7 +25,7 @@ SECRET_KEY = 'gzr9fain##_*n4pi+5=jsvy#((@%!%ki(_s7ysmp7!3c5v)26z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -121,6 +121,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = 'staticfiles'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 #Registration
 ACCOUNT_ACTIVATION_DAYS = 7
